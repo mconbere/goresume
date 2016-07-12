@@ -115,7 +115,7 @@ func andList(l []string) string {
 	} else if len(l) == 1 {
 		return l[0]
 	}
-	return strings.Join(l[:len(l)-2], ", ") + " and " + l[len(l)-1]
+	return strings.Join(l[:len(l)-1], ", ") + " and " + l[len(l)-1]
 }
 
 func date(d *pb.Date) string {
